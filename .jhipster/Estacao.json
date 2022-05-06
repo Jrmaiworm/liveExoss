@@ -1,0 +1,90 @@
+{
+  "applications": "*",
+  "changelogDate": "20220506112203",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "estacao",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "associado",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cidade",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lente",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "camera",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fov",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "kml",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "lng",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "site",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ativa",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pareamento",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Estacao",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "estacao",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "captura",
+      "otherEntityRelationshipName": "estacao",
+      "relationshipName": "captura",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

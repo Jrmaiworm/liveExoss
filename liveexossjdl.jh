@@ -1,0 +1,40 @@
+
+
+entity Estacao {
+	
+	nome String,
+    associado String,
+	email String,
+	telefone String,
+	cidade String,
+    estado String,
+    lente String,
+    camera String,
+    fov Double,
+    kml String,
+	lat Double,
+	lng Double,
+    site String,
+    ativa Boolean,
+    pareamento String,
+   
+}
+
+entity Captura{
+imagem ImageBlob,
+data Instant,
+descricao String,
+status Boolean,
+video String
+
+
+}
+
+
+relationship OneToOne {
+	 Estacao to User 
+}
+
+relationship OneToMany {
+	 Estacao to Captura
+}
