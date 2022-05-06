@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20220506112204",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "captura",
+  "fields": [
+    {
+      "fieldName": "imagem",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "data",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "descricao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "video",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Captura",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "estacao",
+      "otherEntityRelationshipName": "captura",
+      "relationshipName": "estacao",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
